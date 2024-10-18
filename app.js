@@ -31,7 +31,7 @@ convertType.addEventListener('change', function () {
 });
 // Function to add length units
 function addLengthUnits() {
-        // Add new options for length units
+    // Add new options for length units
     lengthOptions.forEach(option => {
         const inputOption = document.createElement('option');
         inputOption.textContent = option;
@@ -80,49 +80,49 @@ resultType.addEventListener('change', compute);
         return;
     }
     let resultValue;
-if (inputValue === outputValue){ resultValue = inputNum};
-//  Length conversion 
-if (inputValue === "metre" && outputValue === "kilometre") {
-    resultValue = inputNum / 1000; 
-} else if (inputValue === "centimetre" && outputValue === "kilometre") {
-    resultValue = inputNum / 100000; 
-} else if (inputValue === "kilometre" && outputValue === "metre") {
-    resultValue = inputNum * 1000;
-} else if (inputValue === "centimetre" && outputValue === "metre") {
-    resultValue = inputNum / 100; 
-} else if (inputValue === "kilometre" && outputValue === "centimetre") {
-    resultValue = inputNum * 100000; 
-} else if (inputValue === "metre" && outputValue === "centimetre") {
-    resultValue = inputNum * 100;
-} 
-//  mass conversion 
-if (inputValue === "kilogram" && outputValue === "pound") {
-    resultValue = inputNum * 2.20462; 
-} else if (inputValue === "kilogram" && outputValue === "ounce") {
-    resultValue = inputNum * 35.274; 
-} else if (inputValue === "pound" && outputValue === "kilogram") {
-    resultValue = inputNum / 2.20462; 
-} else if (inputValue === "pound" && outputValue === "ounce") {
-    resultValue = inputNum * 16; 
-} else if (inputValue === "ounce" && outputValue === "kilogram") {
-    resultValue = inputNum / 35.274; 
-} else if (inputValue === "ounce" && outputValue === "pound") {
-    resultValue = inputNum / 16;
-} 
-// Temperature conversion 
-if (inputValue === "celsius" && outputValue === "fahrenheit") {
-    resultValue = (inputNum * 9/5) + 32; 
-} else if (inputValue === "celsius" && outputValue === "kelvin") {
-    resultValue = inputNum + 273.15; 
-} else if (inputValue === "fahrenheit" && outputValue === "celsius") {
-    resultValue = (inputNum - 32) * 5/9;
-} else if (inputValue === "fahrenheit" && outputValue === "kelvin") {
-    resultValue = (inputNum - 32) * 5/9 + 273.15; 
-} else if (inputValue === "kelvin" && outputValue === "celsius") {
-    resultValue = inputNum - 273.15; 
-} else if (inputValue === "kelvin" && outputValue === "fahrenheit") {
-    resultValue = (inputNum - 273.15) * 9/5 + 32; 
-}
-result.value = resultValue.toFixed(5);
+    if (inputValue === outputValue){ resultValue = inputNum};
+    //  Length conversion 
+    if (inputValue === "metre" && outputValue === "kilometre") {
+        resultValue = inputNum / 1000; 
+    } else if (inputValue === "centimetre" && outputValue === "kilometre") {
+        resultValue = inputNum / 100000; 
+    } else if (inputValue === "kilometre" && outputValue === "metre") {
+        resultValue = inputNum * 1000;
+    } else if (inputValue === "centimetre" && outputValue === "metre") {
+        resultValue = inputNum / 100; 
+    } else if (inputValue === "kilometre" && outputValue === "centimetre") {
+        resultValue = inputNum * 100000; 
+    } else if (inputValue === "metre" && outputValue === "centimetre") {
+        resultValue = inputNum * 100;
+    } 
+    //  mass conversion 
+    if (inputValue === "kilogram" && outputValue === "pound") {
+        resultValue = inputNum * 2.20462; 
+    } else if (inputValue === "kilogram" && outputValue === "ounce") {
+        resultValue = inputNum * 35.274; 
+    } else if (inputValue === "pound" && outputValue === "kilogram") {
+        resultValue = inputNum / 2.20462; 
+    } else if (inputValue === "pound" && outputValue === "ounce") {
+        resultValue = inputNum * 16; 
+    } else if (inputValue === "ounce" && outputValue === "kilogram") {
+        resultValue = inputNum / 35.274; 
+    } else if (inputValue === "ounce" && outputValue === "pound") {
+        resultValue = inputNum / 16;
+    } 
+    // Temperature conversion 
+    if (inputValue === "celsius" && outputValue === "fahrenheit") {
+        resultValue = (inputNum * 9/5) + 32; 
+    } else if (inputValue === "celsius" && outputValue === "kelvin") {
+        resultValue = inputNum + 273.15; 
+    } else if (inputValue === "fahrenheit" && outputValue === "celsius") {
+        resultValue = (inputNum - 32) * 5/9;
+    } else if (inputValue === "fahrenheit" && outputValue === "kelvin") {
+        resultValue = (inputNum - 32) * 5/9 + 273.15; 
+    } else if (inputValue === "kelvin" && outputValue === "celsius") {
+        resultValue = inputNum - 273.15; 
+    } else if (inputValue === "kelvin" && outputValue === "fahrenheit") {
+        resultValue = (inputNum - 273.15) * 9/5 + 32; 
+    }
+    result.value = resultValue.toFixed(5);
 }
 
